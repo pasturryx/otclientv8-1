@@ -42,7 +42,7 @@ int main(int argc, const char* argv[]) {
     g_logger.setLogFile(compactName + ".log");
 
     // setup application name and version
-    g_app.setName("OTClientV8");
+    g_app.setName("ForgottenNot");
     g_app.setCompactName(compactName);
     g_app.setVersion("3.1");
 
@@ -152,7 +152,7 @@ void android_main(struct android_app* state)
     while(!g_window.isVisible() && !terminated)
         g_window.poll(); // init window
     // run app
-    const char* args[] = { "otclientv8.apk" };
+    const char* args[] = { "FrogottenNotv8.apk" };
     main(1, args);
     std::exit(0); // required!
 }
